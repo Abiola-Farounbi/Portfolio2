@@ -366,7 +366,7 @@ animation: animation 0.7s 1 forwards;
     .projectButton a:hover{
       color: #472383 !important;
       text-decoration: none;
-      z-index:7;
+      z-index:4;
     }
    
 
