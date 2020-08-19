@@ -349,7 +349,7 @@ animation: animation 0.7s 1 forwards;
         border-radius: 10px;
         padding:10px 5px;
         position: relative;
-        z-index:4;
+        z-index:1;
         text-align:left !important;
         
       }
@@ -366,7 +366,7 @@ animation: animation 0.7s 1 forwards;
     .projectButton a:hover{
       color: #472383 !important;
       text-decoration: none;
-      z-index:4;
+      z-index:1;
     }
    
 
