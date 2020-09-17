@@ -490,7 +490,7 @@ animation: animation 0.7s 1 forwards;
 
   }
   .writingBoxMain{
-    height:100vh;
+ 
   }
   .writingBox{
     background-color: white;
@@ -498,7 +498,14 @@ animation: animation 0.7s 1 forwards;
     margin:20px auto;
     padding:20px;
     filter: drop-shadow(2px 2px 3px gray);
+    transition: all  0.5s;
   }
+  .writingBox:hover{
+    transform:scale(0.98);
+  }
+  
+  .writingBox h4:hover{
+    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;  }
   .writingBox h4{
     font-size: 20px;
     font-weight: 900;
@@ -509,9 +516,8 @@ animation: animation 0.7s 1 forwards;
     1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
   }
   .writingBox p{
-    color:black;
+    color:black; 
     font-size:15px;
-
   }
   .writingBox h6{
     text-align: right;
