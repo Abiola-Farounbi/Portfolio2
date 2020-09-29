@@ -343,9 +343,9 @@ animation: animation 0.7s 1 forwards;
         font-size: 20px;
         font-weight: 900;
         text-transform: uppercase;
-        color:white;
+        color: black;
         text-align: left !important;
-        text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
+        /* text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black; */
       }
       .caption h5{
         font-size: 15px;
@@ -359,8 +359,7 @@ animation: animation 0.7s 1 forwards;
       .captionButtons{
         display:flex;
         align-items: center;
-        padding:10px;
-        
+        padding: 10px 0px;
       }
       .captionButton1{
         background-color: #472383 ;
@@ -483,11 +482,9 @@ animation: animation 0.7s 1 forwards;
     font-size: 25px;
     font-weight: 900;
     text-transform: uppercase;
-    color: white;
+    color:  #472383;
     padding:10px;
-    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,
-    1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
-
+    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
   }
   .writingBoxMain{
  
@@ -504,16 +501,16 @@ animation: animation 0.7s 1 forwards;
     transform:scale(0.98);
   }
   
-  .writingBox h4:hover{
-    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;  }
   .writingBox h4{
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
-    color: white;
+    color:#472383  ;
     text-align: left !important;
-    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,
-    1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
+    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
+  }
+  .writingBox a{
+    color:#472383  ;
   }
   .writingBox p{
     color:black; 
