@@ -734,8 +734,7 @@ animation: animation 0.7s 1 forwards;
     font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
-    color:white;
-    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
+    color:black;
   }
   
   .caption h5{
@@ -750,7 +749,7 @@ animation: animation 0.7s 1 forwards;
   .captionButtons{
     display:flex;
     align-items: center;
-    padding:10px;
+    padding:10px 0px;
     
   }
   .captionButton1{
