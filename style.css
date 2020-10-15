@@ -4,12 +4,11 @@
   font-family: Arima Madurai;
   letter-spacing: 1px;
   font-weight: 300;
-  /* border:1px solid red; */
   }
 body{
   overflow-x: hidden;
   color:white;
-  
+ 
   }
   a{
     text-decoration: none;
@@ -21,6 +20,7 @@ body{
     text-align: center;
     position: relative;
     margin:15px 0px ;
+    font-weight: 900;
 }
  h3::after{
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #2a0a49, rgba(0, 0, 0, 0));
@@ -56,7 +56,7 @@ body{
 
   /* Navigation */
   nav{
-    height: 100px;
+    height:80px;
     /* width: 100vw; */
     background-color: #472383 !important;
     box-shadow: 4px 3px 20px rgba(0, 0, 0, 0.2);
@@ -70,7 +70,7 @@ body{
       display: flex;
       list-style: none;
      float:right;
-      padding: 0 0.7vw;
+      padding: 0 0.9vw;
       justify-content: space-evenly;
       align-items: center;
       }
@@ -80,22 +80,20 @@ body{
       color:white;
       }
       .nav-links li a:hover {
-      background-color:  white;
-      color:#472383;
-      padding:10px;
-      transform: scale(0.5);
-      border-radius: 999px;
-      box-shadow: 2px 2px 4px gray;
-      }
+        background-color:white;
+        color:#472383;
+        padding:5px 10px ;
+        transform: scale(0.5);
+        border-radius: 10px;
+        }
       .nav-links li {
       position: relative;
       }
 
-
       .hamburger div{
       width: 30px;
       height:3px;
-      background:black;
+      background:white;
       margin: 5px;
       transition: all 0.3s ease;
       }
@@ -126,7 +124,7 @@ body{
         position: fixed;
         background-color: white;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         z-index:4;
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
@@ -151,9 +149,9 @@ body{
         .nav-links li a:hover {
           background-color:#472383;
           color:white;
-          padding:10px;
+          padding:5px 10px ;
           transform: scale(0.5);
-          border-radius: 999px;
+          border-radius: 10px;
           box-shadow: 2px 2px 4px gray;
           }
         .nav-links li:nth-child(1){
@@ -185,6 +183,7 @@ body{
         }
         .toggle .line1{
         transform: rotate(-45deg) translate(-5px,6px);
+        background-color:black;
         }
         .toggle .line2{
         transition: all 0.5s ease;
@@ -192,12 +191,13 @@ body{
         }
         .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
+        background-color:black;
         }
 
         /* background */
         .mainBody{
           background-color: #472383 ;
-          height:40vh;
+          height:50vh;
           position:relative;
           padding:10px;
           margin-bottom: 300px;          
@@ -216,20 +216,20 @@ body{
           height: 150px;
           border-radius:999px;
           position: relative;
-          filter: drop-shadow(1px 1px 6px #2a0a49);
+          box-shadow:6px 0px 4px  #2a0a49;
           animation:  glow 3s linear 0s infinite;
         }
 
         @keyframes glow {
-          0%{  filter: drop-shadow(1px 1px 1px white);}
-          50%{  filter: drop-shadow(1px 1px 2px white);}
-          100%{  filter: drop-shadow(1px 1x 3px white);}
+          0%{  box-shadow:2px 0px 4px  #2a0a49;}
+          50%{  box-shadow:4px 0px 4px  #2a0a49;}
+          100%{  box-shadow:6px 0px 4px  #2a0a49;}
         }
 
         .curvyBackground{ 
           display: inline-block; 
           position: absolute; 
-          top: 40vh; 
+          top: 50vh; 
           left: 0; 
       } 
         .bio{
@@ -246,7 +246,7 @@ body{
       } 
       /* socials */
 .social{
-  padding:10px;
+  padding:10px 0px;
 }
 .icon-cover{
 text-align: center;
@@ -255,10 +255,10 @@ display: flex;
 .icon{
 width: 50px;
 height: 50px;
-background: #472383;
+background:white;
 margin: 10px;
-border-radius: 30%;
-color: white;
+border-radius: 50%;
+color:  #472383;
 box-shadow: 0 5px 15px -5px #00000070;
 position: relative;
 overflow: hidden;
@@ -267,10 +267,11 @@ overflow: hidden;
 line-height: 50px;
 font-size: 15px;
 transition: 0.2s;
+font-weight: 900;
 }
 .icon:hover i{
 transform: scale(1.3);
-color:   #472383 !important;
+color:   white !important;
 }
 .icon i{
   font-size: 20px;
@@ -282,7 +283,7 @@ content: "";
 position: absolute;
 width: 120%;
 height: 120%;
-background:white;
+background: #472383;
 left: -110%;
 top: 90%;
 transform: rotate(45deg);
@@ -314,22 +315,23 @@ animation: animation 0.7s 1 forwards;
         width:80%;
         margin:30px auto;
         display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 4rem;
         grid-row-gap: 3rem;
       }
   
       .dropdown{
-        width:400px;
+        width:301px;
         position:relative;
-        height:600px;
         overflow: hidden;
-        filter: drop-shadow(2px 2px 4px grey);
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px grey;
       }
       .dropdown img{
         width:100%;
         position:relative;
         transition: all .5s;
+        text-align: center !important;
       }
       .caption{
         width:100%;
@@ -337,7 +339,8 @@ animation: animation 0.7s 1 forwards;
         text-align:center;
         background-color: white;
         transition:all 0.5s;
-        padding:20px 15px !important;
+        padding:10px 9px !important;
+        margin: -10px 0px;
       }
       .caption h4{
         font-size: 20px;
@@ -345,10 +348,10 @@ animation: animation 0.7s 1 forwards;
         text-transform: uppercase;
         color: black;
         text-align: left !important;
-        /* text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black; */
+
       }
       .caption h5{
-        font-size: 15px;
+        font-size: 13px;
         font-weight: 600;
         color: grey;
         text-align: left !important;
@@ -437,10 +440,10 @@ animation: animation 0.7s 1 forwards;
   }
   .skillsBoxMain{
     background-color: white;
-    width:80%;
+    width:90%;
     margin:10px auto;
     padding:20px;
-    filter: drop-shadow(2px 2px 3px gray);
+    box-shadow: 2px 2px 4px gray;
   }
   .skillsBox{
     margin-top: 10px;
@@ -450,18 +453,17 @@ animation: animation 0.7s 1 forwards;
   }
   .skillsBox li{
     font-size: 10px;
-    text-align: left;
+    text-align: center;
   }
   .skillsBox i{
     font-size: 50px;
-    color:#2a0a49;
+    color:black;
     margin-top: 10px;
   }
   .skillsBox i:hover{
-    box-shadow: 2px 2px 4px gray;
-    transform: scale(1.05);
-    background-color: #2a0a49;
-    color: white;
+    box-shadow: 1px 1px 2px gray;
+    background-color: white;
+    color: #472383;
     padding: 5px;
   }
    .gatsbyLogo{
@@ -470,10 +472,9 @@ animation: animation 0.7s 1 forwards;
     height:50px;
   }
   .gatsbyLogo:hover{
-         box-shadow: 2px 2px 4px gray;
-    transform: scale(1.05);
-    background-color: #2a0a49;
-    color: white;
+    box-shadow: 1px 1px 2px gray;
+    background-color: white;
+    color: #472383;
     padding: 5px;
   }
 
@@ -484,7 +485,7 @@ animation: animation 0.7s 1 forwards;
     text-transform: uppercase;
     color:  #472383;
     padding:10px;
-    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
+  
   }
   .writingBoxMain{
  
@@ -498,7 +499,7 @@ animation: animation 0.7s 1 forwards;
     transition: all  0.5s;
   }
   .writingBox:hover{
-    transform:scale(0.98);
+    transform:scale(1.01);
   }
   
   .writingBox h4{
@@ -507,7 +508,7 @@ animation: animation 0.7s 1 forwards;
     text-transform: uppercase;
     color:#472383  ;
     text-align: left !important;
-    text-shadow: 1px 1px 2px grey,1px 1px 2px grey,1px 1px 2px grey;
+    
   }
   .writingBox a{
     color:#472383  ;
@@ -529,7 +530,7 @@ animation: animation 0.7s 1 forwards;
     right: 0;
     margin: 0 auto;
     z-index: 2;
-    height: 35vh;
+    height: 50vh;
     justify-content: space-evenly;
     align-items: center;
     color: white;
@@ -541,14 +542,17 @@ animation: animation 0.7s 1 forwards;
     color: white;
     border-radius: 0.5em;   
   }
-  .messageBox > a {
+  .messageBox  a i{
+    color:white;
+    
+  }
+  .messageBox  a {
     font-size: 50px ;
     color:white ;
     margin-top: 5px;
   }
   .messageBox i:hover{
-    transform: scale(1.05);
-    box-shadow: 1px 1px 2px gray;
+    transform: scale(1.1);
   }
   .footerExtra1 a{
     text-decoration: none;
@@ -576,7 +580,7 @@ animation: animation 0.7s 1 forwards;
   /* background */
   .mainBody{
     background-color: #472383 ;
-    height:70vh;
+    height:100vh;
     position:relative;
     padding:10px;
     margin-bottom: 250px;          
@@ -599,19 +603,25 @@ animation: animation 0.7s 1 forwards;
   .curvyBackground{ 
     display: inline-block; 
     position: absolute; 
-    top: 70vh; 
+    top: 100vh; 
     left: 0; 
 } 
 
        
 .skillsBox{
   background-color: white;
-  width:90%;
-  margin:10px auto;
+  width:85%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 
+}
+.skillsBoxMain{
+  background-color: white;
+  width:80%;
+  margin:10px auto;
+  padding:20px;
+  box-shadow: 2px 2px 4px gray;
 }
 
   /* portfolio */
@@ -619,16 +629,14 @@ animation: animation 0.7s 1 forwards;
   .projectBox{
     margin:30px auto;
    display: block;
-   width:50%;
+    /* width:43%; */
   }
 
   .dropdown{
-    width:400px;
+    width:300px;
     position:relative;
-    height:600px;
     overflow: hidden;
     margin:50px 0px;
-    filter: drop-shadow(2px 2px 4px grey);
     text-align: center !important;
   }
 
@@ -655,14 +663,14 @@ animation: animation 0.7s 1 forwards;
  /* background */
  .mainBody{
   background-color: #472383 ;
-  height:120vh;
+  height:140vh;
   padding:10px;
   margin-bottom: 100px;          
 }
 .bioBody{
   position: relative;
   z-index:1;
-  width:90%;
+  width:95%;
   margin:50px auto;  
 }
 
@@ -672,7 +680,6 @@ animation: animation 0.7s 1 forwards;
   border-radius: 9999px;
   position: relative;
   z-index:2;
-  /* border: 4px dotted #fa709a; */
   filter: drop-shadow(4px 4px 8px #2a0a49);
 }
 
@@ -680,25 +687,30 @@ animation: animation 0.7s 1 forwards;
 .curvyBackground{ 
   display: inline-block; 
   position: absolute; 
-  top: 120vh; 
+  top: 140vh; 
   left: 0; 
 } 
 
 
 
-
+.skillsBoxMain{
+  background-color: white;
+  width:85%;
+  margin:10px auto;
+  padding:20px;
+  box-shadow: 2px 2px 4px gray;
+}
 
 .skillsBox{
   background-color: white;
   width:85%;
-  margin:10px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
 .skillsBox i{
   font-size: 20px;
-  color:#2a0a49;
+  color:black ;
   margin-top: 10px;
 }
  .gatsbyLogo{
@@ -711,15 +723,14 @@ animation: animation 0.7s 1 forwards;
   .projectBox{
     margin:30px auto;
    display: block;
-  }
 
+  }
   .dropdown{
     width:230px;
     position:relative;
-    height:400px;
+    height:370px;
     overflow: hidden;
     margin:50px 0px;
-    filter: drop-shadow(2px 2px 4px grey);
     text-align:center !important;
   }
   .caption{
@@ -734,8 +745,7 @@ animation: animation 0.7s 1 forwards;
     font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
-    color:white;
-    text-shadow: 1px 1px 2px black,1px 1px 2px black,1px 1px 2px black;
+    color:black;
   }
   
   .caption h5{
@@ -795,8 +805,11 @@ animation: animation 0.7s 1 forwards;
 
       /* footer */
       .footer{ 
-        height: 28vh;
+        height: 50vh;
       }  
+      .marginAuto{
+        width:90%;
+      }
 
       .messageBox > a {
         font-size: 30px ;
