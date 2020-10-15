@@ -760,7 +760,7 @@ animation: animation 0.7s 1 forwards;
   .captionButtons{
     display:flex;
     align-items: center;
-    padding:10px;
+    padding:10px 0px;
     
   }
   .captionButton1{
