@@ -663,7 +663,7 @@ animation: animation 0.7s 1 forwards;
  /* background */
  .mainBody{
   background-color: #472383 ;
-  height:140vh;
+  height:120vh;
   padding:10px;
   margin-bottom: 100px;          
 }
@@ -687,7 +687,7 @@ animation: animation 0.7s 1 forwards;
 .curvyBackground{ 
   display: inline-block; 
   position: absolute; 
-  top: 140vh; 
+  top: 120vh; 
   left: 0; 
 } 
 
