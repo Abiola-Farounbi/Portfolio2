@@ -325,7 +325,7 @@ animation: animation 0.7s 1 forwards;
         position:relative;
         overflow: hidden;
         border-radius: 10px;
-        box-shadow: 2px 2px 4px grey;
+        box-shadow: 2px 2px 4px #c2bfbf;
       }
       .dropdown img{
         width:100%;
@@ -443,7 +443,7 @@ animation: animation 0.7s 1 forwards;
     width:90%;
     margin:10px auto;
     padding:20px;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px #c2bfbf;
   }
   .skillsBox{
     margin-top: 10px;
@@ -495,7 +495,7 @@ animation: animation 0.7s 1 forwards;
     width:80%;
     margin:20px auto;
     padding:20px;
-    filter: drop-shadow(2px 2px 3px gray);
+    filter: drop-shadow(2px 2px 3px #c2bfbf);
     transition: all  0.5s;
   }
   .writingBox:hover{
