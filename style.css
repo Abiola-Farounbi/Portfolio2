@@ -20,7 +20,7 @@ body{
     text-align: center;
     position: relative;
     margin:15px 0px ;
-    font-weight: 900;
+    font-weight: 850;
 }
  h3::after{
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #2a0a49, rgba(0, 0, 0, 0));
