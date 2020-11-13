@@ -208,6 +208,9 @@ body{
           z-index:1;
           position: relative;
         }
+.bioBody a{
+color:white !important;
+}
 
 
     
