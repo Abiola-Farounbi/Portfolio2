@@ -20,7 +20,7 @@ body{
     text-align: center;
     position: relative;
     margin:15px 0px ;
-    font-weight: 900;
+    font-weight: 850;
 }
  h3::after{
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #2a0a49, rgba(0, 0, 0, 0));
@@ -208,6 +208,9 @@ body{
           z-index:1;
           position: relative;
         }
+.bioBody b{
+color:white !important;
+}
 
 
     
@@ -325,7 +328,7 @@ animation: animation 0.7s 1 forwards;
         position:relative;
         overflow: hidden;
         border-radius: 10px;
-        box-shadow: 2px 2px 4px grey;
+        box-shadow: 2px 2px 4px #c2bfbf;
       }
       .dropdown img{
         width:100%;
@@ -443,7 +446,7 @@ animation: animation 0.7s 1 forwards;
     width:90%;
     margin:10px auto;
     padding:20px;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 4px #c2bfbf;
   }
   .skillsBox{
     margin-top: 10px;
@@ -495,7 +498,7 @@ animation: animation 0.7s 1 forwards;
     width:80%;
     margin:20px auto;
     padding:20px;
-    filter: drop-shadow(2px 2px 3px gray);
+    filter: drop-shadow(2px 2px 3px #c2bfbf);
     transition: all  0.5s;
   }
   .writingBox:hover{
@@ -663,7 +666,7 @@ animation: animation 0.7s 1 forwards;
  /* background */
  .mainBody{
   background-color: #472383 ;
-  height:140vh;
+  height:110vh;
   padding:10px;
   margin-bottom: 100px;          
 }
@@ -687,7 +690,7 @@ animation: animation 0.7s 1 forwards;
 .curvyBackground{ 
   display: inline-block; 
   position: absolute; 
-  top: 140vh; 
+  top: 110vh; 
   left: 0; 
 } 
 
