@@ -18,7 +18,7 @@ hamburger.classList.toggle("toggle");
 
 
 var options = {
-    strings: ["", "Farounbi~ ", "Abiola~", "Esther~", "Farounbi Abiola Esther" ],
+    strings: ["", "Farounbi~ ", "Abiola~",  "Farounbi Abiola" ],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed
