@@ -11,7 +11,6 @@
      <link rel="stylesheet"  href="style.css"/>
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-     <link rel='stylesheet' href='fontawesome/css/all.css'>
 </head>
 <body>
   <nav>
@@ -29,18 +28,57 @@
      <li><a href="index.html#about">About Me </a></li>
      <li><a href="index.html#portfolio">Portfolio</a></li>
      <li><a href="index.html#skills">Skills</a></li>
-     <li><a href="writing.html" >Writings</a></li>
+     <li><a href="writing.html" > Blog </a></li>
      <li><a href="index.html#contact">Contact Me </a></li>
     </ul>
    </nav>
+
+   <section class="filterTags">
+  <ul>
+    <li  onclick="showAll()"> #All </li>
+    <li onclick="showCss()"> #CSS </li>
+    <li onclick="showJs()"> #Javascript </li>
+    <li onclick="showVue()"> #VUE </li>
+    <li onclick="showPython()"> #Python </li>
+    <li onclick="showDev()"> #Dev </li>
+  </ul>
+   </section>
        
-       <section class='writing'>
-           <h2 class="textCenter">
-               Articles 
-           </h2>
+       <section class='writing'>    
         <div class="writingBoxMain">
+
+
+          <div class='blog js'>
+            <a href='https://www.educative.io/shoteditor/5167658265214976' target="_blank">
+              <div class="writingBox">
+                  <a href='https://www.educative.io/shoteditor/5167658265214976' target='_blank'> 
+                      <h4> What are browser APIs? </h4>
+                  </a>
+                  <p> 
+                    API stands for Application Programming Interface, which is a set of protocols and definitions that allows communication between two software
+                </p>
+                  <h5 class='pubTag'> Edpresso  </h5> <br/> <br/>
+                  <h6> 10 - 11 - 2021 </h6>
+              </div>
+            </a>
+          </div> 
+
+          <div class='blog css '>
+            <a href='https://www.educative.io/shoteditor/6190113291239424' target="_blank">
+              <div class="writingBox">
+                  <a href='https://www.educative.io/shoteditor/6190113291239424' target='_blank'> 
+                      <h4> What is the CSS hover selector? </h4>
+                  </a>
+                  <p> 
+                    CSS selectors play a key role in styling an HTML element.
+                </p>
+                  <h5 class='pubTag'> Edpresso  </h5> <br/> <br/>
+                  <h6> 24 - 10 - 2021 </h6>
+              </div>
+            </a>
+          </div> 
             
-              <div>
+              <div class='blog vue '>
             <a href='https://dev.to/hackmamba/building-a-movies-app-with-vue-auth0-and-cloudinary-4g7c' target="_blank">
               <div class="writingBox">
                   <a href='https://dev.to/hackmamba/building-a-movies-app-with-vue-auth0-and-cloudinary-4g7c' target='_blank'> 
@@ -48,12 +86,14 @@
                   </a>
                   <p> 
             Vue JS is a progressive javascript framework that is used to develop user-friendly and interactive user interfaces. It is a flexible framework that can be integrated with different platforms without any hassle
+                </p>
+                  <h5 class='pubTag'> Dev.to  </h5> <br/> <br/>
                   <h6> 16 - 10 - 2021 </h6>
               </div>
             </a>
           </div> 
             
-                  <div>
+            <div class='blog css'>
             <a href='https://www.educative.io/edpresso/what-is-the-css-grid-property' target="_blank">
               <div class="writingBox">
                   <a href='https://www.educative.io/edpresso/what-is-the-css-grid-property' target='_blank'> 
@@ -61,26 +101,29 @@
                   </a>
                   <p> 
              Grid is one of CSS’s layout tools, which lets you easily implement a complex design layout using the “row and column approach.” 
-                  <h6> 29 - 09 - 2021 </h6>
+             </p>
+             <h5 class='pubTag'> Edpresso  </h5> <br/> <br/>     
+             <h6> 29 - 09 - 2021 </h6>
               </div>
             </a>
           </div> 
             
-              <div>
+              <div class='blog vue'>
             <a href='https://www.freecodecamp.org/news/build-accessible-vue-applications/' target="_blank">
               <div class="writingBox">
                   <a href='https://www.freecodecamp.org/news/build-accessible-vue-applications/' target='_blank'> 
                       <h4> How to Build Accessible Vue Applications </h4>
                   </a>
                   <p> 
-               Developing web pages used to involve writing HTML, CSS, and a little scripting code like JavaScript for functionality.
-                  <h6> 8 - 07 - 2021 </h6>
+                    Developing web pages used to involve writing HTML, CSS, and a little scripting code like JavaScript for functionality.
+                    </p>
+               <h5 class='pubTag'> Freecodecamp  </h5> <br/> <br/>      
+               <h6> 8 - 07 - 2021 </h6>
               </div>
             </a>
           </div> 
-            
-            
-                <div>
+                 
+                <div class='blog vue'>
             <a href='https://egghead.io/blog/how-to-use-the-animate-on-scroll-aos-library-in-vue' target="_blank">
               <div class="writingBox">
                   <a href='https://egghead.io/blog/how-to-use-the-animate-on-scroll-aos-library-in-vue' target='_blank'> 
@@ -88,12 +131,14 @@
                   </a>
                   <p> 
                 Animations are used to attract people’s attention and add interactivity to your web application rather than just a static page.
-                  <h6> 25 - 06 - 2021 </h6>
+                </p>
+                <h5 class='pubTag'> Edpresso  </h5> <br/> <br/>      
+                <h6> 25 - 06 - 2021 </h6>
               </div>
             </a>
           </div> 
             
-             <div>
+             <div class='blog vue'>
             <a href='https://www.educative.io/edpresso/what-are-vue-components' target="_blank">
               <div class="writingBox">
                   <a href='https://www.educative.io/edpresso/what-are-vue-components' target='_blank'> 
@@ -101,12 +146,14 @@
                   </a>
                   <p> 
                 Vue JS is a JavaScript framework used to develop single-page applications (SPAs).
-                  <h6> 26 - 04 - 2021 </h6>
+                </p>
+                <h5 class='pubTag'> Edpresso  </h5> <br/> <br/>     
+                <h6> 26 - 04 - 2021 </h6>
               </div>
             </a>
           </div> 
             
-            <div>
+            <div class='blog dev'>
             <a href='https://www.freecodecamp.org/news/build-your-personal-brand-as-a-developer/' target="_blank">
               <div class="writingBox">
                   <a href='https://www.freecodecamp.org/news/build-your-personal-brand-as-a-developer/' target='_blank'> 
@@ -114,12 +161,14 @@
                   </a>
                   <p> 
                 Branding is not just something that companies need to worry about. Individuals can also establish a personal brand.
-                  <h6> 8 - 04 - 2021 </h6>
+                </p>
+                <h5 class='pubTag'> Freecodecamp  </h5> <br/> <br/>      
+                <h6> 8 - 04 - 2021 </h6>
               </div>
             </a>
           </div> 
                     
-                      <div>
+            <div class='blog vue'>
             <a href='https://dev.to/abiolaesther_/an-overview-of-the-top-10-vue-ui-component-libraries-in-2021-3dhm' target="_blank">
               <div class="writingBox">
                   <a href='https://dev.to/abiolaesther_/an-overview-of-the-top-10-vue-ui-component-libraries-in-2021-3dhm' target='_blank'> 
@@ -127,12 +176,14 @@
                   </a>
                   <p> 
                 Vue JS is a progressive JavaScript framework that's used to develop single-page applications (SPAs) and User Interfaces. And it's one of the most widely-used front-end frameworks out there.
-                  <h6> 18 - 03 - 2021 </h6>
+                </p>
+                <h5 class='pubTag'> Dev.to  </h5> <br/> <br/>     
+                <h6> 18 - 03 - 2021 </h6>
               </div>
             </a>
           </div>  
                     
-         <div>
+         <div class='blog js'>
             <a href='https://www.freecodecamp.org/news/the-applications-of-javascript/ ' target="_blank">
               <div class="writingBox">
                   <a href='https://www.freecodecamp.org/news/the-applications-of-javascript/ ' target='_blank'> 
@@ -141,13 +192,14 @@
                   <p> 
                  According to survey results from Stack Overflow in 2020, JavaScript is the most popular programming language in the world, with over 63% of developers using it.
                   </p>
+                  <h5 class='pubTag'> Freecodecamp  </h5> <br/> <br/>    
                   <h6> 6 - 02 - 2021 </h6>
               </div>
             </a>
           </div>  
             
             
-          <div >
+          <div class='blog css'>
             <a href=' https://abiolafarounbiblog.hashnode.dev/creating-an-animated-christmas-tree-with-css' target="_blank">
               <div class="writingBox">
                   <a href='https://abiolafarounbiblog.hashnode.dev/creating-an-animated-christmas-tree-with-css' target='_blank'> 
@@ -158,16 +210,14 @@
                   <br>
                    In this article, I will explain how I was able to implement a Christmas Tree using CSS.
                   </p>
+                  <h5 class='pubTag'> Hashnode  </h5> <br/> <br/>    
                   <h6> 20 - 12 - 2020 </h6>
               </div>
             </a>
           </div>  
             
-            
-            
-            
-            
-         <div>
+           
+         <div class='blog dev'>
             <a href=' https://abiolafarounbiblog.hashnode.dev/cool-vscode-extensions-for-developers' target="_blank">
               <div class="writingBox">
                   <a href='https://abiolafarounbiblog.hashnode.dev/cool-vscode-extensions-for-developers' target='_blank'> 
@@ -178,16 +228,13 @@
                   <br>
                    One of the coolest features 😎 of vscode is the Vscode Extension.
                   </p>
+                  <h5 class='pubTag'> Hashnode  </h5> <br/> <br/>    
                   <h6> 5 - 11 - 2020 </h6>
               </div>
             </a>
           </div>  
             
-            
-            
-            
-            
-               <div >
+               <div class='blog js'>
             <a href=' https://dev.to/abiolaesther_/creating-awesome-carousels-with-swiper-js-57e' target="_blank">
               <div class="writingBox">
                   <a href='https://dev.to/abiolaesther_/creating-awesome-carousels-with-swiper-js-57e' target='_blank'> 
@@ -198,12 +245,13 @@
                       <br>
                       Well, this problem can be solved using SWIPER JS
                   </p>
+                  <h5 class='pubTag'> Dev.to  </h5> <br/> <br/>    
                   <h6> 5 - 11 - 2020 </h6>
               </div>
             </a>
           </div>   
 
-          <div>
+          <div class=' blog dev'>
             <a href=' https://abiolafarounbiblog.hashnode.dev/ui-vs-ux' target="_blank">
               <div class="writingBox">
                   <a href='https://abiolafarounbiblog.hashnode.dev/ui-vs-ux' target='_blank'> 
@@ -214,12 +262,13 @@
                     <br>
                     Most people tend to understand ui and ux as the same thing which is not. They are totally to different concepts.  
                   </p>
+                  <h5 class='pubTag'> hashnode  </h5> <br/> <br/>    
                   <h6> 14 - 10 - 2020 </h6>
               </div>
             </a>
           </div>
 
-          <div>
+          <div class='blog css'>
             <a  target='_blank' href='https://abiolafarounbiblog.hashnode.dev/creating-animations-using-css-ckerv5f0v00tw8ps1083v1qt6'> 
               <div class="writingBox">
                 <a target='_blank' href='https://abiolafarounbiblog.hashnode.dev/creating-animations-using-css-ckerv5f0v00tw8ps1083v1qt6'>
@@ -228,12 +277,13 @@
                 <p>
                     Animations make your website more lively to view and can be done with plain CSS without any library involved
                 </p>
+                <h5 class='pubTag'> Hashnode  </h5> <br/> <br/>    
                 <h6> 07 - 09 - 2020 </h6>
             </div>
               </a>
           </div>
 
-            <div>
+            <div class=' blog dev'>
               <a target='_blank' href='https://abiolafarounbiblog.hashnode.dev/hosting-your-website-on-github-ckd3wmfax02xxaws15b2wen3i'>
                 <div class="writingBox">
                   <a target='_blank' href='https://abiolafarounbiblog.hashnode.dev/hosting-your-website-on-github-ckd3wmfax02xxaws15b2wen3i'>
@@ -242,18 +292,20 @@
                   <p>
                       Most beginners in web development face the issue of creating websites but unable to host it or display on the web. That's were GITHUB comes in YAY!!!
                   </p>
+                  <h5 class='pubTag'> Hashnode  </h5> <br/> <br/>    
                   <h6> 27 - 07 - 2020 </h6>
               </div>
               </a>
             </div>
 
-            <div>
+            <div class='blog dev'>
               <a href=' https://abiolafarounbiblog.hashnode.dev/beginners-path-for-front-end-development' target="_blank">
                 <div class="writingBox">
                     <a href='https://abiolafarounbiblog.hashnode.dev/beginners-path-for-front-end-development' target='_blank'> 
                         <h4> Beginner's path for Front-end Development </h4>
                     </a>
                     <p> Front-end Development basically deals with the client-side of a website that is the part that the users interact with when visiting a website. </p>
+                    <h5 class='pubTag'> Hashnode  </h5> <br/> <br/>    
                     <h6> 12 - 07 - 2020 </h6>
                 </div>
               </a>
@@ -261,8 +313,6 @@
 
 
             </div>
-
-     
        </section>
 
     <footer>
