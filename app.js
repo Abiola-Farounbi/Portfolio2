@@ -1,26 +1,19 @@
-// / Filter Tags
-const blogs =  document.querySelectorAll(".blog");
-const  vueTag = document.querySelectorAll(".vue");
-const  cssTag = document.querySelectorAll(".css");
-const  jsTag = document.querySelectorAll(".js");
-const  pythonTag = document.querySelectorAll(".python");
-const  devTag = document.querySelectorAll(".dev");
-
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
-hamburger.addEventListener('click', ()=>{
-    //Animate Link
+
+
+hamburger.addEventListener('click', ()=>{    
 navLinks.classList.toggle("open");
 navLinks.style.display='flex'
-links.forEach( link => {
-link.classList.toggle("fade");
-link.addEventListener('click' , () => {
-    navLinks.style.display='none';
-});
-});
-// Hamburger Animation
-hamburger.classList.toggle("toggle");
+    links.forEach( link => {
+    link.classList.toggle("fade");
+    link.addEventListener('click' , () => {
+        navLinks.style.display='none';
+        hamburger.classList.remove("close");
+    });
+    });
+hamburger.classList.toggle("close");
 });
 
 
@@ -50,7 +43,13 @@ var options = {
 var typed = new Typed('.Text', options);
 
 
-
+// / Filter Tags
+const blogs =  document.querySelectorAll(".blog");
+const  vueTag = document.querySelectorAll(".vue");
+const  cssTag = document.querySelectorAll(".css");
+const  jsTag = document.querySelectorAll(".js");
+const  pythonTag = document.querySelectorAll(".python");
+const  devTag = document.querySelectorAll(".dev");
 
 function hide_init(){
     // var blogs =  document.querySelectorAll('.blog');
