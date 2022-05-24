@@ -338,7 +338,7 @@ animation: animation 0.7s 1 forwards;
         padding: 10px;
       }
       .projectBox{
-        width:80%;
+        width:85%;
         margin:30px auto;
         display:grid;
         grid-template-columns: repeat(3, 1fr);
