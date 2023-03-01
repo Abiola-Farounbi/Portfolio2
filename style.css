@@ -225,7 +225,7 @@ body{
           margin-bottom: 300px;          
         }
         .bioBody{
-          margin:50px auto;
+          margin:10px auto;
           width:70%;      
           z-index:1;
           position: relative;
@@ -619,25 +619,15 @@ animation: animation 0.7s 1 forwards;
     margin-bottom: 250px;          
   }
   .bioBody{
-    z-index:1;
-    position: relative;
-    margin:50px auto;
     width:70%;
-    font-size: 15px;
   }
   .profileImage{
-    width:150px;
-    height: 150px;
-    border-radius: 9999px;
-    position: relative;
     z-index:2;
-    filter: drop-shadow(4px 4px 8px #2a0a49);
   }
+
+     
   .curvyBackground{ 
-    display: inline-block; 
-    position: absolute; 
     top: 100vh; 
-    left: 0; 
 } 
 
 .filterTags{
@@ -646,7 +636,6 @@ animation: animation 0.7s 1 forwards;
 
        
 .skillsBox{
-  background-color: white;
   width:85%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -699,34 +688,20 @@ animation: animation 0.7s 1 forwards;
 @media only screen and (min-width:100px) and (max-width:500px){
  /* background */
  .mainBody{
-  background-color: #472383 ;
   height:110vh;
   padding:10px;
-  margin-bottom: 100px;          
+  margin-bottom: 100px;         
 }
 .bioBody{
-  position: relative;
-  z-index:1;
   width:95%;
-  margin:50px auto;  
   font-size: 13px;
 }
 
-.profileImage{
-  width:150px;
-  height: 150px;
-  border-radius: 9999px;
-  position: relative;
-  z-index:2;
-  filter: drop-shadow(4px 4px 8px #2a0a49);
-}
+
 
 
 .curvyBackground{ 
-  display: inline-block; 
-  position: absolute; 
   top: 110vh; 
-  left: 0; 
 } 
 
 .filterTags{
