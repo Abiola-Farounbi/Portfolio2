@@ -73,7 +73,7 @@ function hide_init(){
         }
     function showReact(){  
         hide_init();
-           for (var i = 0; i < react.length; ++i) { 
+           for (var i = 0; i < reactTag.length; ++i) { 
                 reactTag[i].style.display = 'block';  } 
         }
     
