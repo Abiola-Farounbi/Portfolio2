@@ -26,7 +26,7 @@ const  cssTag = document.querySelectorAll(".css");
 const  jsTag = document.querySelectorAll(".js");
 const  pythonTag = document.querySelectorAll(".python");
 const  devTag = document.querySelectorAll(".dev");
-const  devTag = document.querySelectorAll(".react");
+const  reactTag = document.querySelectorAll(".react");
 
 function hide_init(){
     // var blogs =  document.querySelectorAll('.blog');
@@ -74,7 +74,7 @@ function hide_init(){
     function showReact(){  
         hide_init();
            for (var i = 0; i < react.length; ++i) { 
-                devTag[i].style.display = 'block';  } 
+                reactTag[i].style.display = 'block';  } 
         }
     
 
