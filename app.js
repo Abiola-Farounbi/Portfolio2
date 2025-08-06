@@ -27,6 +27,7 @@ const  jsTag = document.querySelectorAll(".js");
 const  pythonTag = document.querySelectorAll(".python");
 const  devTag = document.querySelectorAll(".dev");
 const  reactTag = document.querySelectorAll(".react");
+const  NextJsTag = document.querySelectorAll(".nextjs");
 
 function hide_init(){
     // var blogs =  document.querySelectorAll('.blog');
@@ -75,6 +76,12 @@ function hide_init(){
         hide_init();
            for (var i = 0; i < reactTag.length; ++i) { 
                 reactTag[i].style.display = 'block';  } 
+        }
+
+    function showNextJs(){  
+        hide_init();
+           for (var i = 0; i <  NextJsTag.length; ++i) { 
+                 NextJsTag[i].style.display = 'block';  } 
         }
     
 
